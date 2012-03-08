@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsKata", "src\RomanNumeralsKata\RomanNumeralsKata.csproj", "{A1CCAA5A-6902-4148-BDE3-05E6DCCBF464}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsKata.Unit.Tests", "..\src\RomanNumeralsKata\RomanNumeralsKata.Unit.Tests\RomanNumeralsKata.Unit.Tests.csproj", "{E344EB73-D3EE-439B-9593-75F5F6342F0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsKata.Unit.Tests", "src\RomanNumeralsKata.Unit.Tests\RomanNumeralsKata.Unit.Tests.csproj", "{E344EB73-D3EE-439B-9593-75F5F6342F0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
