@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsKata", "src\RomanNumeralsKata\RomanNumeralsKata.csproj", "{A1CCAA5A-6902-4148-BDE3-05E6DCCBF464}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsKata.Unit.Tests", "..\src\RomanNumeralsKata\RomanNumeralsKata.Unit.Tests\RomanNumeralsKata.Unit.Tests.csproj", "{E344EB73-D3EE-439B-9593-75F5F6342F0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1CCAA5A-6902-4148-BDE3-05E6DCCBF464}.Debug|x86.ActiveCfg = Debug|x86
+		{A1CCAA5A-6902-4148-BDE3-05E6DCCBF464}.Debug|x86.Build.0 = Debug|x86
+		{A1CCAA5A-6902-4148-BDE3-05E6DCCBF464}.Release|x86.ActiveCfg = Release|x86
+		{A1CCAA5A-6902-4148-BDE3-05E6DCCBF464}.Release|x86.Build.0 = Release|x86
+		{E344EB73-D3EE-439B-9593-75F5F6342F0B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E344EB73-D3EE-439B-9593-75F5F6342F0B}.Debug|x86.Build.0 = Debug|Any CPU
+		{E344EB73-D3EE-439B-9593-75F5F6342F0B}.Release|x86.ActiveCfg = Release|Any CPU
+		{E344EB73-D3EE-439B-9593-75F5F6342F0B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = src\RomanNumeralsKata\RomanNumeralsKata.csproj
+	EndGlobalSection
+EndGlobal
