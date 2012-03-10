@@ -70,6 +70,14 @@ namespace RomanNumeralsKata.Unit.Tests
 			
 			Assert.That (output, Is.EqualTo ("XX"));
 		}
+		
+		[Test]
+		public void Should_parse_50_to_L ()
+		{
+			var output = new RomanNumeral ().Parse (50);
+			
+			Assert.That (output, Is.EqualTo ("L"));
+		}
 	}
 }
 
