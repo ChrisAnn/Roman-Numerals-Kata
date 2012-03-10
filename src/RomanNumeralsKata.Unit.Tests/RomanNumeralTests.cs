@@ -102,6 +102,13 @@ namespace RomanNumeralsKata.Unit.Tests
 			
 			Assert.That (output, Is.EqualTo ("M"));
 		}
-	}
+				
+		[Test]
+		public void Should_parse_94_to_XCIV ()
+		{
+			var output = new RomanNumeral ().Parse (94);
+			
+			Assert.That (output, Is.EqualTo ("XCIV"));
+		}	}
 }
 
