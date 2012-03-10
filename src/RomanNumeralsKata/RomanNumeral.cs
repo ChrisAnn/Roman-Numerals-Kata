@@ -12,6 +12,9 @@ namespace RomanNumeralsKata
 			if (arabicNumeral == 5)
 				return "V";
 			
+			if (arabicNumeral == 6)
+				return "VI";
+			
 			string romanNumeral = string.Empty;
 			
 			for (int i = 0; i < arabicNumeral; i++)
