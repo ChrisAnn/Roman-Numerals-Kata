@@ -9,6 +9,9 @@ namespace RomanNumeralsKata
 			if (arabicNumeral == 4)
 				return "IV";
 			
+			if (arabicNumeral == 5)
+				return "V";
+			
 			string romanNumeral = string.Empty;
 			
 			for (int i = 0; i < arabicNumeral; i++)
