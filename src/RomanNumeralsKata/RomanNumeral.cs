@@ -14,14 +14,14 @@ namespace RomanNumeralsKata
 			var noTens = arabicNumeral / 10;
 			for (int i = 0; i < noTens; i++)
 			{
-				romanNumeral = "X";
+				romanNumeral += "X";
 				arabicNumeral -= noTens * 10;
 			}
 			
 			var noFives = arabicNumeral / 5;
 			if (noFives == 1)
 			{
-				romanNumeral = "V";
+				romanNumeral += "V";
 				arabicNumeral -= 5;
 			}
 			

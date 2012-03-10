@@ -62,6 +62,14 @@ namespace RomanNumeralsKata.Unit.Tests
 			
 			Assert.That (output, Is.EqualTo ("X"));
 		}
+		
+		[Test]
+		public void Should_parse_20_to_XX ()
+		{
+			var output = RomanNumeral.Parse (20);
+			
+			Assert.That (output, Is.EqualTo ("XX"));
+		}
 	}
 }
 
