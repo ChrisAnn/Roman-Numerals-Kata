@@ -1,34 +1,44 @@
 using System;
+using System.Collections.Generic;
 
 namespace RomanNumeralsKata
 {
 	public class RomanNumeral
 	{
-		public static string Parse (int arabicNumeral)
+		private string _romanNumeral = string.Empty;
+		private readonly IDictionary<int, string> _mappings = new Dictionary<int, string>();
+		
+		public RomanNumeral ()
+		{
+			_mappings.Add(10, "X");
+			_mappings.Add(5, "V");
+		}
+		
+		public string Parse (int arabicNumeral)
 		{
 			if (arabicNumeral == 4)
 				return "IV";
-			
-			string romanNumeral = string.Empty;
-			
-			var noTens = arabicNumeral / 10;
-			for (int i = 0; i < noTens; i++)
+						
+			foreach (var mapping in _mappings)
 			{
-				romanNumeral += "X";
-				arabicNumeral -= noTens * 10;
-			}
-			
-			var noFives = arabicNumeral / 5;
-			if (noFives == 1)
-			{
-				romanNumeral += "V";
-				arabicNumeral -= 5;
+				arabicNumeral = ParseMultiples(arabicNumeral, mapping);
 			}
 			
 			for (int i = 0; i < arabicNumeral; i++)
-				romanNumeral += "I";			
+				_romanNumeral += "I";			
 			
-			return romanNumeral;
+			return _romanNumeral;
+		}
+
+		private int ParseMultiples(int arabicNumeral, KeyValuePair<int,string> mapping)
+		{
+			var noMultiples = arabicNumeral / mapping.Key;
+			for (int i = 0; i < noMultiples; i++)
+			{
+				_romanNumeral += mapping.Value;
+			}
+			
+			return  arabicNumeral - (noMultiples * mapping.Key);
 		}
 	}
 }

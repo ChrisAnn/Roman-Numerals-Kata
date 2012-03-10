@@ -10,7 +10,7 @@ namespace RomanNumeralsKata.Unit.Tests
 		[Test]
 		public void Should_parse_one_to_I ()
 		{
-			var output = RomanNumeral.Parse (1);
+			var output = new RomanNumeral().Parse (1);
 			
 			Assert.That (output, Is.EqualTo ("I"));
 		}
@@ -18,7 +18,7 @@ namespace RomanNumeralsKata.Unit.Tests
 		[Test]
 		public void Should_parse_two_to_II ()
 		{
-			var output = RomanNumeral.Parse (2);
+			var output = new RomanNumeral().Parse (2);
 			
 			Assert.That (output, Is.EqualTo ("II"));
 		}
@@ -26,7 +26,7 @@ namespace RomanNumeralsKata.Unit.Tests
 		[Test]
 		public void Should_parse_three_to_III ()
 		{
-			var output = RomanNumeral.Parse (3);
+			var output = new RomanNumeral().Parse (3);
 			
 			Assert.That (output, Is.EqualTo ("III"));
 		}
@@ -34,7 +34,7 @@ namespace RomanNumeralsKata.Unit.Tests
 		[Test]
 		public void Should_parse_4_to_IV ()
 		{
-			var output = RomanNumeral.Parse (4);
+			var output = new RomanNumeral().Parse (4);
 			
 			Assert.That (output, Is.EqualTo ("IV"));
 		}
@@ -42,7 +42,7 @@ namespace RomanNumeralsKata.Unit.Tests
 		[Test]
 		public void Should_parse_5_to_V ()
 		{
-			var output = RomanNumeral.Parse (5);
+			var output = new RomanNumeral().Parse (5);
 			
 			Assert.That (output, Is.EqualTo ("V"));
 		}
@@ -50,7 +50,7 @@ namespace RomanNumeralsKata.Unit.Tests
 		[Test]
 		public void Should_parse_6_to_VI ()
 		{
-			var output = RomanNumeral.Parse (6);
+			var output = new RomanNumeral().Parse (6);
 			
 			Assert.That (output, Is.EqualTo ("VI"));
 		}
@@ -58,7 +58,7 @@ namespace RomanNumeralsKata.Unit.Tests
 		[Test]
 		public void Should_parse_10_to_X ()
 		{
-			var output = RomanNumeral.Parse (10);
+			var output = new RomanNumeral().Parse (10);
 			
 			Assert.That (output, Is.EqualTo ("X"));
 		}
@@ -66,7 +66,7 @@ namespace RomanNumeralsKata.Unit.Tests
 		[Test]
 		public void Should_parse_20_to_XX ()
 		{
-			var output = RomanNumeral.Parse (20);
+			var output = new RomanNumeral().Parse (20);
 			
 			Assert.That (output, Is.EqualTo ("XX"));
 		}
