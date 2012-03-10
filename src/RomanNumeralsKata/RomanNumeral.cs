@@ -6,7 +6,10 @@ namespace RomanNumeralsKata
 	{
 		public static string Parse (int arabicNumeral)
 		{
-			return "I";
+			if (arabicNumeral == 1)
+				return "I";
+			else 
+				return "II";
 		}
 	}
 }

@@ -12,7 +12,15 @@ namespace RomanNumeralsKata.Unit.Tests
 		{
 			var output = RomanNumeral.Parse (1);
 			
-			Assert.That(output, Is.EqualTo("I"));
+			Assert.That (output, Is.EqualTo ("I"));
+		}
+		
+		[Test]
+		public void Should_parse_two_to_II ()
+		{
+			var output = RomanNumeral.Parse (2);
+			
+			Assert.That (output, Is.EqualTo ("II"));
 		}
 	}
 }
