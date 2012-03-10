@@ -54,6 +54,14 @@ namespace RomanNumeralsKata.Unit.Tests
 			
 			Assert.That (output, Is.EqualTo ("VI"));
 		}
+		
+		[Test]
+		public void Should_parse_10_to_X ()
+		{
+			var output = RomanNumeral.Parse (10);
+			
+			Assert.That (output, Is.EqualTo ("X"));
+		}
 	}
 }
 

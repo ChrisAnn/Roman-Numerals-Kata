@@ -11,6 +11,13 @@ namespace RomanNumeralsKata
 			
 			string romanNumeral = string.Empty;
 			
+			var noTens = arabicNumeral / 10;
+			for (int i = 0; i < noTens; i++)
+			{
+				romanNumeral = "X";
+				arabicNumeral -= noTens * 10;
+			}
+			
 			var noFives = arabicNumeral / 5;
 			if (noFives == 1)
 			{
