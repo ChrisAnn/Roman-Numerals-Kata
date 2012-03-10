@@ -10,6 +10,7 @@ namespace RomanNumeralsKata
 		
 		public RomanNumeral ()
 		{
+			_mappings.Add(500, "D");
 			_mappings.Add(100, "C");
 			_mappings.Add(50, "L");
 			_mappings.Add(10, "X");
