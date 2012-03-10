@@ -94,6 +94,14 @@ namespace RomanNumeralsKata.Unit.Tests
 			
 			Assert.That (output, Is.EqualTo ("D"));
 		}
+				
+		[Test]
+		public void Should_parse_1000_to_M ()
+		{
+			var output = new RomanNumeral ().Parse (1000);
+			
+			Assert.That (output, Is.EqualTo ("M"));
+		}
 	}
 }
 
