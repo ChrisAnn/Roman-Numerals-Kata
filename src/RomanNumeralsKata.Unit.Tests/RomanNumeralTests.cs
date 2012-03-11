@@ -109,6 +109,15 @@ namespace RomanNumeralsKata.Unit.Tests
 			var output = new RomanNumeral ().Parse (94);
 			
 			Assert.That (output, Is.EqualTo ("XCIV"));
-		}	}
+		}	
+				
+		[Test]
+		public void Should_parse_1990_to_MCMXC ()
+		{
+			var output = new RomanNumeral ().Parse (1990);
+			
+			Assert.That (output, Is.EqualTo ("MCMXC"));
+		}	
+	}
 }
 
